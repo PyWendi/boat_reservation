@@ -1,0 +1,23 @@
+﻿<Window x:Name="IndexWindow" x:Class="BoatReservation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoatReservation"
+        mc:Ignorable="d"
+        Title="Boat Reservation" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Frame x:Name="MainImage" Background="Azure" Content="" HorizontalAlignment="Left" Height="571" VerticalAlignment="Top" Width="401"/>
+        <Frame x:Name="LoginFrame" Content="" HorizontalAlignment="Left" Height="571" Margin="406,0,0,0" VerticalAlignment="Top" Width="383" Navigated="frame1_Navigated"/>
+        <Grid HorizontalAlignment="Left" Height="382" Margin="485,86,0,0" VerticalAlignment="Top" Width="251">
+            <Label x:Name="UsernameLabel" Content="Username" HorizontalAlignment="Left" Margin="30,79,0,0" VerticalAlignment="Top" Width="167"/>
+            <Label x:Name="Passwordlabel" Content="Password" HorizontalAlignment="Left" Margin="30,163,0,0" VerticalAlignment="Top" Width="167"/>
+            <TextBox x:Name="UsernameField" HorizontalAlignment="Left" Height="23" Margin="30,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" TextChanged="UsernameField_TextChanged"/>
+        </Grid>
+        <PasswordBox x:Name="PasswordField" HorizontalAlignment="Left" Margin="516,295,0,0" VerticalAlignment="Top" Width="167" Height="23"/>
+        <Button x:Name="SubmitLogin" Content="Submit" HorizontalAlignment="Left" Margin="608,353,0,0" VerticalAlignment="Top" Width="75" Click="SubmitLogin_Click"/>
+        <Button x:Name="CloseMW" Content="Close" HorizontalAlignment="Left" Margin="516,353,0,0" VerticalAlignment="Top" Width="75" Click="CloseMW_Click"/>
+        <Label x:Name="label" Content="L O G I N" HorizontalAlignment="Left" Margin="516,86,0,0" VerticalAlignment="Top" Width="167" FontSize="21.333" HorizontalContentAlignment="Center"/>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Left" Margin="516,387,0,0" VerticalAlignment="Top" Width="167" Foreground="#FFB44848"/>
+    </Grid>
+</Window>
